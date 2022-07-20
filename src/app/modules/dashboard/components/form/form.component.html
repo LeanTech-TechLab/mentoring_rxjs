@@ -1,0 +1,9 @@
+<div class="form">
+    <form [formGroup]="characterForm">
+        <mat-form-field appearance="legacy">
+            <mat-label>Character name</mat-label>
+            <input matInput formControlName="name">
+        </mat-form-field>
+    </form>
+    <button mat-raised-button color="primary" [disabled]="characterForm.invalid" (click)="searchCharacter()"> Search Character</button>
+</div>
