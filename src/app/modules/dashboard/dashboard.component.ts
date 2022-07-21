@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import {Component, OnInit} from "@angular/core";
 import {MoviesService} from "@app-services/movies.service";
 
 @Component({
@@ -6,15 +6,23 @@ import {MoviesService} from "@app-services/movies.service";
   templateUrl: "./dashboard.component.html",
   styleUrls: ["./dashboard.component.scss"],
 })
-export class DashboardComponent{
+export class DashboardComponent implements OnInit{
 
-  constructor(private movieServie: MoviesService) {
+  constructor(private movieService: MoviesService) {}
 
+  ngOnInit(): void {
+    this.getAllFilms();
   }
 
   searchCharacterName(name: string) {
     console.log('name', name);
-    this.movieServie.getCharacterName(name).subscribe((result) => {
+    this.movieService.getCharacterName(name).subscribe((result) => {
+      console.log('result', result);
+    })
+  }
+
+  getAllFilms() {
+    this.movieService.getAllFilms().subscribe((result)=>{
       console.log('result', result);
     })
   }

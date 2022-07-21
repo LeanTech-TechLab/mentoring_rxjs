@@ -13,6 +13,12 @@ export class FormComponent implements OnInit {
     this.characterForm = this.fb.group({
       name: ['', [Validators.required]]
     })
+    this.getName.valueChanges.subscribe((result) => {
+      console.log('formcontrol name', result)
+      if (result.length > 3) {
+        this.searchCharacter(result)
+      }
+    })
   }
 
   get getName() {
@@ -22,8 +28,8 @@ export class FormComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  searchCharacter() {
-    this.searchCharacterEmitter.emit(this.getName.value)
+  searchCharacter(search: string) {
+    this.searchCharacterEmitter.emit(search);
   }
 
 }
