@@ -10,6 +10,10 @@ import { MainLayoutModule } from "./layouts/main-layout/main-layout.module";
 import { AuthGuard } from "@app-core/auth-guard/auth.guard";
 import { AuthenticationService } from "@app-core/authentication/authentication.service";
 import {InterceptorService} from "@app-core/http/interceptor.service";
+import {StoreModule} from "@ngrx/store";
+import {StoreDevtoolsModule} from "@ngrx/store-devtools";
+import {reducers} from "@app-core/store";
+import {environment} from "@environments/environment";
 
 @NgModule({
   declarations: [AppComponent, PageNotFoundComponent],
@@ -20,8 +24,8 @@ import {InterceptorService} from "@app-core/http/interceptor.service";
     MainLayoutModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    /*StoreModule.forRoot(reducers, {}),
-    StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.PRODUCTION }),*/
+    StoreModule.forRoot(reducers, {}),
+    StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.PRODUCTION }),
   ],
   providers: [AuthenticationService, AuthGuard, {
     provide: HTTP_INTERCEPTORS,

@@ -37,9 +37,8 @@ export class MoviesService {
           release_date: films.release_date
         }
       })
-    }),map(data => {
-      return data.filter((element: any) => new Date(element.release_date) > new Date("1990-01-01"))
-    }))
+    })
+    )
   }
 }
 

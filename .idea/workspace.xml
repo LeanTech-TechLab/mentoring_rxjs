@@ -5,12 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="97456f8a-6dde-4187-aa2e-1f4556c98561" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/app/core/store/actions/character-information.action.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/core/store/actions/films-information.action.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/core/store/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/core/store/reducers/characterInformation.reducer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/core/store/reducers/films-information.reducer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/models/app-state.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/models/character-information.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/models/films-information.model.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/modules/dashboard/components/form/form.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/dashboard/components/form/form.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/modules/dashboard/components/form/form.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/dashboard/components/form/form.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/modules/dashboard/dashboard.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/dashboard/dashboard.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/services/movies.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/movies.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/environments/environment.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,21 +34,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/gustavonavarro/Documents/LeanTech/Projects/mentoring/Extra Mentoring/mentoring_rxjs",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "yarn",
-    "ts.external.directory.path": "/Users/gustavonavarro/Documents/LeanTech/Projects/mentoring/Extra Mentoring/mentoring_rxjs/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/gustavonavarro/Documents/LeanTech/Projects/mentoring/Extra Mentoring/mentoring_rxjs&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/gustavonavarro/Documents/LeanTech/Projects/mentoring/Extra Mentoring/mentoring_rxjs/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/app/modules/dashboard/components/form" />
@@ -81,7 +87,8 @@
       <workItem from="1658326458609" duration="1393000" />
       <workItem from="1658329433614" duration="6826000" />
       <workItem from="1658412423387" duration="34000" />
-      <workItem from="1658412594580" duration="4987000" />
+      <workItem from="1658412594580" duration="6120000" />
+      <workItem from="1658504764877" duration="3770000" />
     </task>
     <servers />
   </component>
